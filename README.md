@@ -6,4 +6,4 @@ Di seguito la gerarchia del cartella:
 
 - Modulo Git: contiene del codice utilizzato per provare i comandi git.
 - Modulo HTML:
-    - 01. Pagina con articolo per blog
+    - 01 Pagina con articolo per blog
