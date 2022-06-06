@@ -8,3 +8,4 @@ Di seguito la gerarchia del cartella:
 - Modulo HTML:
     - 01 Pagina con articolo per blog
     - 02 Head Open Graph
+    - 03 Tabella
