@@ -10,7 +10,7 @@ Il form deve contenere i seguenti campi:
    - Un piano free
    - Un gruppo di massimo 3 piani con prezzo crescente
  - Un campo per scegliere se aggiungere o meno i vantaggi PRO
- - Campi per inserimento carta di scredito
+ - Campi per inserimento carta di credito
    - Numero carta
    - CVC
    - Scadenza
