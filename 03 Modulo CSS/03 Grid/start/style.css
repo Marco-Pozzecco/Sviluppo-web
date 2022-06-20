@@ -1,0 +1,128 @@
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "result result result result"
+        "plus minus times divide"
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "zero dot AC equal";
+    justify-items: stretch;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+
+.calculator-result {
+    grid-area: result;
+    justify-self: end;
+    background-color: #394348;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    vertical-align: middle;
+    color: white;
+}
+
+.calculator div:not(.calculator-result) {
+    background-color: white;
+    margin: auto;
+    border: 1px solid gray;
+}
+
+.plus{
+    grid-area: plus;
+    height: 75px;
+    width: 100%;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.times{
+    grid-area: times;
+}
+
+.divide{
+    grid-area: divide;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.nine { 
+    grid-area: nine;
+}
+
+.eight { 
+    grid-area: eight;
+    width: 100%;
+    height: 100%;
+}
+
+.seven { 
+    grid-area: seven;
+    width: 100%;
+    height: 100%;
+}
+
+.six { 
+    grid-area: six;
+    width: 100%;
+    height: 100%;
+}
+
+.five { 
+    grid-area: five;
+    width: 100%;
+    height: 100%;
+}
+
+.four { 
+    grid-area: four;
+    width: 100%;
+    height: 100%;
+}
+
+.three { 
+    grid-area: three;
+    width: 100%;
+    height: 100%;
+}
+
+.two { 
+    grid-area: two;
+    width: 100%;
+    height: 100%;
+}
+
+.one { 
+    grid-area: one;
+    width: 100%;
+    height: 100%;
+}
+
+.zero { 
+    grid-area: zero;
+    width: 100%;
+    height: 100%;
+}
+
+.dot { 
+    grid-area: dot;
+    width: 100%;
+    height: 100%;
+}
+
+.cancel {
+    grid-area: AC;
+    width: 100%;
+    height: 100%;
+}
