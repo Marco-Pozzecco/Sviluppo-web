@@ -1,0 +1,29 @@
+div.navbar {
+    background-color: rgba(13, 13, 13, 0.808);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+div.navbar a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px; 
+}
+
+div.navbar a#disabled {
+    color: gray;
+
+}
+
+div.navbar img#caret {
+    color: white;
+
+}
+
+.navbar #search-box {
+    border: 2px solid green;
+    border-radius: 5px;
+    
+}

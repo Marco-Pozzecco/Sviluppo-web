@@ -4,8 +4,8 @@ La cartella è organizzata per moduli e gli esercizi contenuti al suo interno so
 
 Di seguito la gerarchia del cartella:
 
-- Modulo Git: contiene del codice utilizzato per provare i comandi git.
-- Modulo HTML:
+- 01 Modulo Git: contiene del codice utilizzato per provare i comandi git.
+- 02 Modulo HTML:
     - 01 Pagina con articolo per blog
     - 02 Head Open Graph
     - 03 Tabella
@@ -16,3 +16,13 @@ Di seguito la gerarchia del cartella:
     - 08 Validazione
     - 09 Card
     - 10 Navbar
+- 03 Modulo CSS:
+    - 01 Riscrittura regole
+    - 02 Flexbox
+    - 03 Grid
+    >Dall'esercizio 4 gli esercizi contenuti nella repository sono sfasati di uno rispetto al nome attribuito su Develhope.
+    - 04 Esercizio
+    - 05 Esercizio
+    - 06 Esercizio
+    - 07 Esercizio
+    - 08 Esercizio
