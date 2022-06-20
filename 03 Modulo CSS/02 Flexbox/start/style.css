@@ -1,0 +1,40 @@
+div.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #2b2b2b;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-section a{
+    display: block;
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+.nav-section a:hover {
+    text-decoration: none;
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+
+.sidebar .sidebar-footer {
+    margin-top: auto;
+}
+
+.sidebar-footer picture.avatar {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.sidebar-footer picture.avatar img {
+    position: relative;
+    border-radius: 50%;
+}
