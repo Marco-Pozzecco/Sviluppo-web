@@ -4,6 +4,7 @@
 
 section {
     display: flex;
+    justify-content: center;
 }
 
 .card {
@@ -11,6 +12,9 @@ section {
     height: auto;
     background-image: linear-gradient(gray, whitesmoke);
     border-radius: 10px;
+    box-shadow: 1px 2px 5px gray;
+    margin: 20px;
+    flex: 0 1 300px;
 }
 
 /* Card header */
@@ -53,9 +57,10 @@ section {
     transform: rotate(90deg);
 }
 
-
 /* Card content */ 
-
+.card-content img {
+    width: 100%
+}
 
 
 /* Card footer */
@@ -75,3 +80,26 @@ section {
     padding: 5px;
     padding-bottom: 10px;
 } 
+
+/* Tablet Responsibe design */
+
+@media screen and (max-width: 768px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+}
