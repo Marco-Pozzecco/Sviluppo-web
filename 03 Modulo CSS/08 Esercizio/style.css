@@ -1,0 +1,64 @@
+:root {
+
+}
+
+section {
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    background-image: linear-gradient(gray, whitesmoke);
+    border-radius: 10px;
+}
+
+/* Card header and children */
+.card-header {
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-header-profile img {
+    border-radius: 50%;
+}
+
+.card-header-profile {
+    display: flex;
+    align-items: center;
+}
+
+.card-header-contact {
+    padding-left: 10px;
+}
+
+.card-header-contact .card-header-content-username {
+    font-weight: 500;
+}
+
+.card-header-contact .card-header-content-date {
+    color: whitesmoke;
+}
+
+.card-menu {
+    justify-self: flex-end;
+}
+
+
+/* Card content */ 
+
+
+
+/* Card footer */
+
+.card-footer-social {
+    padding: 5px 10px;
+    padding-bottom: 0px;
+}
+
+.card-footer-content {
+    padding: 5px;
+    padding-bottom: 10px;
+} 
