@@ -1,0 +1,42 @@
+body {
+    max-width: 100vw;
+    display: grid;
+    grid-template: 
+        "green green green" 1fr
+        "yellow red blue" 2fr
+        "orange orange blue" 1fr
+        / 1fr 1fr 1fr;
+}
+
+#green {
+    grid-area: green;
+}
+
+#yellow {
+    grid-area: yellow;
+
+}
+
+#yellow ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#red {
+    grid-area: red;
+}
+
+#red ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#blue {
+    grid-area: blue;
+}
+
+#orange {
+    grid-area: orange;
+}
