@@ -1,0 +1,83 @@
+:root {
+    --background-color: #222529;
+    --font-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+div.navbar {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+div.navbar h1 , div.navbar p {
+    display: inline;
+}
+
+.nav-links a {
+    color: rgba(245, 245, 245, 0.836);
+    text-decoration: none;
+    padding-left: 10px; 
+}
+
+.nav-links a:hover , .nav-links img:hover {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+div.navbar a#disabled {
+    color: gray;
+    cursor: default;
+}
+
+
+.nav-search #search-box , .nav-search #search-btn {
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.nav-search #search-box {
+    border: none;
+}
+
+.nav-search #search-box:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.nav-search #search-btn {
+    border: 1px solid green;
+    color: green;
+    background-color: transparent;
+}
+
+.nav-search #search-btn:hover {
+    background-color: green;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .nav-links a , .nav-links img , .nav-search {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+        fill: white;
+        padding-right: 15px;
+    }
+}
