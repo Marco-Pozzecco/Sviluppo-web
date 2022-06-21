@@ -1,5 +1,5 @@
 :root {
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
@@ -13,7 +13,7 @@ section {
     border-radius: 10px;
 }
 
-/* Card header and children */
+/* Card header */
 .card-header {
     padding: 5px 5px;
     display: flex;
@@ -43,7 +43,14 @@ section {
 }
 
 .card-menu {
-    justify-self: flex-end;
+    padding-right: 20px;
+}
+
+.card-menu img{
+    height: 30px;
+    width: auto;
+    fill: black;
+    transform: rotate(90deg);
 }
 
 
@@ -54,8 +61,14 @@ section {
 /* Card footer */
 
 .card-footer-social {
-    padding: 5px 10px;
-    padding-bottom: 0px;
+    height: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.card-footer-social img {
+    height: 20px;
+    padding: 5px;
 }
 
 .card-footer-content {
