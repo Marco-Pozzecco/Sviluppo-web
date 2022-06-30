@@ -1,0 +1,110 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(240, 236, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header {
+    width: min(500px, 90%);
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(199, 127, 85);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-balance h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card-balance p {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+}
+
+.card-image img {
+    border-radius: 50%;
+}
+
+/* Card body */
+
+.card-body {
+    width: min(500px, 90%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body h1 {
+
+}
+
+.card-graph {
+    height: 200px;
+}
+
+.card-expenses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-expenses h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+
+.card-expenses p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-total-exp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-total-exp p {
+    font-size: 40px;
+    margin: 0;
+}
+
+.card-var-exp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 376px) {
+    body {
+        height: auto;
+    }
+
+    .card-header {
+        width: 90%;
+    }
+
+    .card-body {
+        width: 90%
+    }
+}

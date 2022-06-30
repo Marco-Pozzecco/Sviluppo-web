@@ -26,7 +26,8 @@ Di seguito la gerarchia del cartella:
     - 06 Esercizio
     - 07 Esercizio
     - 08 Esercizio
-- 04 Esercitazione pre-test:
+- 04 Esercitazione pre-test (layout nella cartella assets):
+>Tutti i layout sono stati prodotti con il limite di tempo di 30min
     - 01 Esercizio: ricostruire il layout della simulazione d'esame in flexbox;
     - 02 Esercizio: ricostruire il layout della simulazione d'esame in grid;
-    
+    - 03 Esercizio
