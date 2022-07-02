@@ -1,0 +1,115 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(128, 183, 197);
+}
+
+section.card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-pfp {
+    width: min(400px, 90%);
+}
+
+.card-header {
+    height: 150px;
+    background-color: hsl(193, 48%, 40%);
+    border-radius: 10px 10px 0 0 ;
+}
+
+.card-body {
+    background-color: white;
+    height: auto;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-header img {
+    display: inline;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    top: calc(100% - 50px);
+    left: calc(50% - 50px);
+    margin-bottom: 0;
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.card-profile {
+    width: 100%;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.card-user {
+    display: flex;
+    align-items: baseline;
+}
+
+.card-user h1 {
+    margin: 10px 15px;
+    
+}
+
+.card-user p {
+    flex-shrink: 1;
+    margin: 0;
+    color: gray;
+}
+
+.card-profile h2 {
+    grid-area: location;
+    margin: 0 auto;
+    font-size: 18px;
+    flex-shrink: 1;
+}
+
+.card-location {
+    color: gray;
+    margin: 0;
+}
+
+.card-stats {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-stats * {
+    margin: 0;
+}
+
+@media screen and (max-width: 376px) {
+    section.card-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .card-pfp { 
+        width: 90%;
+    }
+}
