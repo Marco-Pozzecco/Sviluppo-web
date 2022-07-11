@@ -1,0 +1,139 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(240, 240, 242);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 600px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        "header header"
+        "sub about-us";
+    border-radius: 10px;
+}
+
+.card-header {
+    grid-area: header;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-header h1 {
+    color: rgb(116, 178, 162);
+    margin: 15px 0;
+}
+
+.card-header h2 {
+    color: rgb(191, 242, 0);
+    margin: 5px 0;
+}
+
+.card-header p {
+    color: rgb(192, 194, 203);
+}
+
+.card-sub {
+    grid-area: sub;
+    background-color: rgb(121, 177, 177);
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-sub h1 {
+    color: white;
+}
+
+.card-sub-price {
+    display: flex;
+    align-items: center;
+}
+
+.card-sub h2 {
+    color: white;
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.card-sub .card-sub-price p {
+    margin-left: 20px;
+    color: whitesmoke;
+}
+
+.card-sub p {
+    color: white;
+}
+
+.card-sub button {
+    align-self: center;
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px gray;
+    margin-top: 10px;
+    background-color: rgb(191, 242, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-about-us {
+    grid-area: about-us;
+    background-color: rgb(136, 188, 189);
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-about-us h1 {
+    color: white;
+}
+
+.card-about-us a {
+    text-decoration: none;
+    cursor: pointer;
+    color: whitesmoke;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 376px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header"
+            "sub"
+            "about-us";
+    }
+
+    .card-header, .card-sub, .card-about-us {
+        padding: 20px 20px;
+    }
+}
+
