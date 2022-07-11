@@ -1,0 +1,36 @@
+@mixin bounce($start: 0, $lenght: -30px) {
+    @keyframes bounce {
+        0%, 20%, 50%, 100% {
+            transform: translateY($start);
+        }
+        40% {
+            transform: translateY($lenght);
+        }
+        60% {
+            transform: translateY(calc($lenght / 2));
+        }
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .blue-square {
+        height: 80px;
+        width: 80px;
+        background-color: blue;
+    }
+
+    .bounce {
+        @include bounce();
+        animation-duration: 1s;
+        animation-name: bounce;
+        animation-iteration-count: infinite;
+    }
+}
