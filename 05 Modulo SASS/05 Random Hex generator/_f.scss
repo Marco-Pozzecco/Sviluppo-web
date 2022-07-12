@@ -1,0 +1,23 @@
+@use "sass:math" as math;
+@use "sass:list" as list;
+@use "sass:string" as str;
+
+@function decToHex($num) {
+    $arr : (A B C D E F);
+    @if $num > 9 {
+        $hex: $num - 9;
+        @return list.nth($arr, $hex);
+    } @else {
+        @return $num;
+    }
+}
+
+@function randomHex() {
+    $red1: decToHex(math.random(15));
+    $red2: decToHex(math.random(15));
+    $blue1: decToHex(math.random(15));
+    $blue2: decToHex(math.random(15));
+    $green1: decToHex(math.random(15));
+    $green2: decToHex(math.random(15));
+    @return str.unquote('#' + $red1 + $red2 + $green1 + $green2 + $blue1 + $blue2);
+}

@@ -1,0 +1,39 @@
+@use "f";
+
+@mixin flex($direction: row, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+html, body {
+    height: 100%;
+    @include flex( null , center, center);
+}
+
+.container {
+    @include flex(null , center, center);
+    padding: 10px;
+    .random {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        margin: 0 5px;
+        &#n1 {
+            background-color: f.randomHex();
+        }
+        &#n2 {
+            background-color: f.randomHex();
+        }
+        &#n3 {
+            background-color: f.randomHex();
+        }
+        &#n4 {
+            background-color: f.randomHex();
+        }
+        &#n5 {
+            background-color: f.randomHex();
+        }
+    }
+}
