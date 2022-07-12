@@ -1,0 +1,47 @@
+@use "variables";
+@use "f";
+
+@mixin article($color, $borderColor, $size: 1rem) {
+    color: $color;
+    border-color: $borderColor;
+    font-size: $size;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        border: f.pxToRem(1) solid red;
+        padding: f.pxToRem(10);
+        h1 {
+            color: variables.$green;
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+        section {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            padding: f.pxToRem(5) f.pxToRem(10);
+            article {
+                width: 100%;
+                padding: f.pxToRem(5);
+                border: f.pxToRem(1) solid;
+            }
+            .blue {
+                @include article(variables.$blue, variables.$green);
+            }
+            .green {
+                @include article(variables.$green, variables.$blue, f.pxToRem(24));
+                text-align: center;
+            }
+            .red {
+                @include article(variables.$red, variables.$green)
+            }
+        }
+    }
+}

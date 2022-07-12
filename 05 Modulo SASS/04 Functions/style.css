@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+body div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border: 0.0625rem solid red;
+  padding: 0.625rem;
+}
+body div h1 {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+body div section {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0.3125rem 0.625rem;
+}
+body div section article {
+  width: 100%;
+  padding: 0.3125rem;
+  border: 0.0625rem solid;
+}
+body div section .blue {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+}
+body div section .green {
+  color: green;
+  border-color: blue;
+  font-size: 1.5rem;
+  text-align: center;
+}
+body div section .red {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
