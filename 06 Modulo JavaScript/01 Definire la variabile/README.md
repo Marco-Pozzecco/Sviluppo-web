@@ -5,6 +5,7 @@ In questo esercizio si sta cercando di far stampare la frase "Paul plays footbal
 Cosa occorre fare per fixare l'errore?
 
 Risposta:
+
 Il problema risiede nello scope della variabile personName, pertanto:
 1. Eliminare il blocco condizionale in quanto sempre vero;
 2. Cambiare la parola chiave let con var;
